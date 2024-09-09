@@ -125,7 +125,7 @@ cmdclass = {}
 ext_modules = []
 
 
-HIP_BUILD = bool(torch.version.hip)
+HIP_BUILD = False
 
 if not SKIP_CUDA_BUILD:
 
