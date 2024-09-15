@@ -312,7 +312,7 @@ class CachedWheelsCommand(_bdist_wheel):
                 os.makedirs(self.dist_dir)
 
             impl_tag, abi_tag, plat_tag = self.get_tag()
-            archive_basename = "causal_conv1d-1.4.0+cu122torch2.4cxx11abiTRUE-cp39-cp39-linux_x86_64"
+            archive_basename = "causal_conv1d-1.4.0-cp39-cp39-linux_x86_64"
 
             wheel_path = os.path.join(self.dist_dir, archive_basename + ".whl")
             print("Raw wheel path", wheel_path)
