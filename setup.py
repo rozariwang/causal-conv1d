@@ -283,8 +283,7 @@ def get_wheel_url():
     cxx11_abi = str(torch._C._GLIBCXX_USE_CXX11_ABI).upper()
 
     # Determine wheel URL based on CUDA version, torch version, python version and OS
-    wheel_filename = f"{PACKAGE_NAME}-{causal_conv1d_version}+{cuda_or_hip}{gpu_compute_version}torch{torch_version}cxx11abi{cxx11_abi}-{python_version}-{python_version}-{platform_name}.whl"
-
+    wheel_filename = "causal_conv1d-1.4.0+cu122torch2.4cxx11abiTRUE-cp39-cp39-linux_x86_64.whl"
     wheel_url = "https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.4.0/causal_conv1d-1.4.0+cu122torch2.4cxx11abiTRUE-cp39-cp39-linux_x86_64.whl"
     return wheel_url, wheel_filename
 
